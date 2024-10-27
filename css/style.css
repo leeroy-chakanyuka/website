@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #885b9e;
+  --primary-color: #11d388;
+  --black: #141414;
+  --white: #fff;
+  --bg: #f2f2f2;
+  --light-black: #666;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.heading span {
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.btn {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    to left top,
+    var(--primary-color),
+    var(--main-color)
+  );
+  background-size: 1000%;
+  transition: 0.25s ease;
+}
+
+.btn:is(:hover, :focus) {
+  background-position: bottom right;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--main-color);
+}
+
+.header .logo {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+.header .logo i {
+  color: var(--primary-color);
+  padding-right: 0.5rem;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: var(--white);
+  padding-block: 0.8rem;
+  position: relative;
+}
+
+.header .navbar a::after {
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.header .navbar a:is(:hover, :focus)::after {
+  transform: scaleX(1);
+}
+
+#menu {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+}
+
+/* end */
+
+/* home */
+
+.home {
+  min-height: 110vh;
+  background: url(../images/home.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content h3 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--white);
+  padding-bottom: 3.5rem;
+}
+/* NEVER EVER ATTEMPT THAT  AGAIN
+/* end */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.row .content {
+  flex: 1 1 40rem;
+}
+
+.row .content h3 {
+  font-size: 3.5rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.row .content p {
+  font-size: 1.6rem;
+  color: var(--light-black);
+  padding: 2rem 0;
+  line-height: 2;
+}
+
+.row .image {
+  flex: 1 1 40rem;
+}
+
+.row .image img {
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  background: #591e75;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.footer .box-container .box a:hover {
+  color: var(--primary-color);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #cecece;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer .credit span {
+  color: var(--primary-color);
+}
+
+/* end */
+
+/* media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    border-top: 0.1rem solid #cecece;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 5rem;
+  }
+
+  .book .content,
+  .book .left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+
+  .table .row .content .container {
+    flex-wrap: wrap;
+  }
+}

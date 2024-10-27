@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO website</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pop-up.css" />
+    <link rel="icon" href="images/favicon.jpg" />
+  </head>
+  <body>
+    <!-- header section -->
+
+    <header class="header">
+      <a href="#" class="logo">CARING IN THE CAPE</a>
+
+      <!--fix link-->
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <!--no link here because we dont want modal to pop up again-->
+        <a href="#philosophy">About us</a>
+        <a href="Projects.html">Projects</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donations.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="fas fa-bars" id="menu"></div>
+    </header>
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>CARING IN THE CAPE</h3>
+        <a href="donations.html" class="btn" id="donate">DONATE</a>
+      </div>
+    </section>
+
+    <!-- end -->
+
+    <section class="philosophy" id="philosophy">
+      <h1 class="heading"><span>Our </span> Beliefs</h1>
+
+      <div class="row">
+        <div class="content">
+          <h3>At Caring in the Cape WE BELIEVE</h3>
+          <p>
+            In a world facing unprecedented challenges, we believe in the power
+            of collective action to foster a brighter, more sustainable future.
+            Our mission is to bridge the gap between social equity and
+            environmental stewardship, ensuring that every voice is heard and
+            every community thrives.
+          </p>
+          <p>
+            Our planet is a shared home, and its preservation is our collective
+            responsibility. We advocate for sustainable practices that protect
+            our natural resources and promote biodiversity, ensuring a healthy
+            environment for future generations.
+          </p>
+          <p>
+            We believe in the strength of collaboration. By forming partnerships
+            with local communities, organizations, and governments, we create
+            impactful solutions that resonate and endure. And we envision a
+            world where communities thrive in harmony with nature, where social
+            justice is paramount, and where every individual is empowered to
+            contribute to a sustainable future. Together, we can create lasting
+            change that reverberates through generations.
+          </p>
+          <p>
+            We strive for a society where everyone has access to the
+            opportunities and resources necessary to succeed. Our initiatives
+            are designed to uplift marginalized voices and promote social
+            justice, recognizing the interconnectedness of environmental health
+            and human well-being.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="images/phil.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <button class="close-modal">&times;</button>
+      <h3 class="modal-text">BE A HERO, DONATE TO OUR CAUSE 🐱‍🏍🌳</h3>
+      <p>
+        We invite you to stand with us in this vital mission. Together, we can
+        build a world that reflects our shared values of sustainability, equity,
+        and hope. Let’s transform our vision into action, one step at a time.
+        <br /><br />
+        <a href="donations.html" class="btn" style="margin: 0 40px">DONATE</a>
+      </p>
+    </div>
+    <div class="overlay"></div>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i></i>Philosophy</h3>
+          <p>Changing the world is <br />changing your attitude !</p>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"></i> +267-000-000-000</a>
+          <a href="#"><i class="fas fa-phone"></i> +267-000-000-000</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i>contact@caringinthecape.com</a
+          >
+          <a href="#"><i class="fas fa-map"></i> District six, cape town</a>
+        </div>
+
+        <div class="box">
+          <h3>Volunteer</h3>
+          <a href="Projects.html"
+            ><i class="fas fa-arrow-right"></i>Education Scheme</a
+          >
+          <a href="Projects.html"
+            ><i class="fas fa-arrow-right"></i>Pollution Prevenetion</a
+          >
+          <a href="Projects.html"
+            ><i class="fas fa-arrow-right"></i>Penguin Preservation</a
+          >
+          <a href="Projects.html"
+            ><i class="fas fa-arrow-right"></i>City Litter scheme</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/pop-up.js"></script>
+  </body>
+</html>

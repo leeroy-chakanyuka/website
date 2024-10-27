@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOLUNTEER</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/volunteer.css" />
+    <link rel="icon" href="images/favicon.jpg" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      margin-top: 55px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 7px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .submitted {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      transition: background-color 0.3s;
+    }
+
+    .submitted:hover {
+      background-color: #591e75;
+    }
+  </style>
+  <header class="header">
+    <a href="#" class="logo">CARING IN THE CAPE</a>
+
+    <!--fix link-->
+
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <!--no link here because we dont want modal to pop up again-->
+      <a href="index.html">About us</a>
+      <a href="Projects.html">Projects</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="donations.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    </nav>
+
+    <div class="fas fa-bars" id="menu"></div>
+  </header>
+
+  <body>
+    <div class="form-container">
+      <div class="Total">
+        <h1>
+          we're excited to have you on board
+        </h1>
+      </div>
+      
+      <form id="volunteerForm">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="amount">Age</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            min="1"
+            step="0.01"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Gender">Gender</label>
+          <select id="Gender" name="Gender" required>
+            <option value="">Prefer not to mention</option>
+            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-Binary</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about yourself:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button class="submitted" type="submit">Make A Difference</button>
+      </form>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h3 class="modal-text"> </h3>
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+
+  
+    <script src="js/volunteer.js"></script>
+  </body>
+</html>

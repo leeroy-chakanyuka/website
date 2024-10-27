@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caring in the Cape - Donation Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/donations.css" />
+    <link rel="stylesheet" href="css/donationss.css" />
+    <link rel="icon" href="images/favicon.jpg" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">CARING IN THE CAPE</a>
+
+      <!--fix link-->
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <!--no link here because we dont want modal to pop up again-->
+        <a href="index.html">About us</a>
+        <a href="Projects.html">Projects</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donations.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="fas fa-bars" id="menu"></div>
+    </header>
+    <div class="container">
+      <h1>Caring in the Cape</h1>
+      <h2>We've Raised So Far</h2>
+      <div class="amount" id="amount">R0.00</div>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="goal" id="goal">Goal: R10,000.00</div>
+      <div class="buttons">
+        <button class="btn" onclick="donate(10)">R10</button>
+        <button class="btn" onclick="donate(50)">R50</button>
+        <button class="btn" onclick="donate(100)">R100</button>
+      </div>
+      <div class="custom-donation">
+        <input type="number" id="custom-amount" placeholder="Enter amount" />
+        <button class="btn" onclick="donateCustom()">Donate</button>
+      </div>
+    </div>
+
+    <script src="js/donations.js"></script>
+  </body>
+</html>

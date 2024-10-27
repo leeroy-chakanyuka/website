@@ -1,0 +1,65 @@
+.show-modal {
+  position: absolute;
+  top: 0.8rem; /* Adjust this as needed */
+  right: 0.8rem; /* Adjust to bring it inside the modal */
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem; /* Position it slightly away from the top edge */
+  right: 1rem; /* Position it slightly away from the right edge */
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.2rem; /* Slightly larger than before for better visibility */
+  padding: 0; /* Remove any default padding */
+  line-height: 1; /* Set line height to prevent excess space */
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+}
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  font-size: 200%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  height: 25%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  /* center everything */
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
